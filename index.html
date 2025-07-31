@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance | Perfumaria de Luxo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-gray-900">ELEGANCE</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-900 hover:text-gray-600">Início</a>
+                    <a href="#produtos" class="text-gray-900 hover:text-gray-600">Perfumes</a>
+                    <a href="#sobre" class="text-gray-900 hover:text-gray-600">Sobre</a>
+                    <a href="#contato" class="text-gray-900 hover:text-gray-600">Contato</a>
+                </div>
+                <div class="flex items-center">
+                    <button id="cart-button" class="relative p-1 rounded-full text-gray-900 hover:text-gray-600">
+                        <span id="cart-badge" class="cart-badge hidden">0</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                    </button>
+                    </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero flex items-center justify-center text-center text-white">
+        <div class="max-w-2xl mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Fragrâncias que <span class="text-red-500">inspiram</span></h1>
+            <p class="text-xl md:text-2xl mb-8">Descubra nossa coleção de perfumes requintados que capturam a essência da elegância.</p>
+            <a href="#produtos" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                Explore a coleção
+            </a>
+        </div>
+    </section>
+
+    <section id="produtos" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Nossos Destaques</h2>
+            <div id="product-list" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                </div>
+            <div id="load-more-container" class="text-center mt-16">
+                <button id="load-more-btn" class="border-2 border-gray-900 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-900 hover:text-white transition duration-300">
+                    Carregar Mais
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">A Arte da Perfumaria</h2>
+            <p class="text-gray-700 mb-4 leading-relaxed">Na Elegance, acreditamos que um perfume é mais do que uma fragrância; é uma assinatura pessoal, uma forma de arte que evoca memórias e expressa identidade. Nascemos da paixão por essências raras e da busca incessante pela combinação perfeita. Cada frasco é o resultado de um trabalho artesanal, onde perfumistas renomados utilizam ingredientes da mais alta qualidade, provenientes de fontes sustentáveis ao redor do mundo.</p>
+            <p class="text-gray-700 leading-relaxed">Nossa missão é oferecer uma experiência olfativa única, que transcenda o comum e celebre a sofisticação em sua forma mais pura.</p>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">O que nossos clientes dizem</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <p class="text-gray-600 mb-4 italic">"O Noir Elegance é simplesmente divino. Virou minha marca registrada. Atendimento impecável!"</p>
+                    <h4 class="font-bold text-gray-800">- Juliana M.</h4>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <p class="text-gray-600 mb-4 italic">"Recebi meu Fleur Royale e estou apaixonada. A fixação é incrível e a embalagem é um luxo."</p>
+                    <h4 class="font-bold text-gray-800">- Carlos S.</h4>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <p class="text-gray-600 mb-4 italic">"Qualidade de perfumaria internacional com a agilidade de uma empresa local. Recomendo!"</p>
+                    <h4 class="font-bold text-gray-800">- Beatriz L.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Nossa Localização</h2>
+            <div class="map-container shadow-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14002.58019315551!2d-49.44473341857857!3d-28.67027581179603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9522253350523a89%3A0x6b228b789c629156!2sArarangu%C3%A1%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1722374758557!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Entre em Contato</h2>
+            <div class="bg-gray-100 rounded-lg p-8 max-w-3xl mx-auto">
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Assunto</label>
+                        <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gray-900 hover:bg-gray-700 text-white font-bold py-3 px-4 rounded-md transition duration-300">
+                        Enviar mensagem
+                    </button>
+                </form>
+                <div id="form-feedback"></div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-900 text-white pt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ELEGANCE</h3>
+                    <p class="text-gray-400">A arte da perfumaria em sua forma mais refinada.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.28C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.84C20.33,8.63 20.33,8.42 20.32,8.21C21.17,7.63 21.88,6.87 22.46,6Z" /></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.227-1.669 4.771-4.919 4.919-1.266.058-1.646.07-4.85.07-3.204 0-3.584-.012-4.85-.07-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148-3.227 1.669-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163m0-1.808C8.74 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.74 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.949.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.668-.072-4.948C23.728 2.695 21.302.274 16.948.073 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Ajuda</h4>
+                    <ul class="space-y-2">
+                         <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                         <li><a href="#" class="text-gray-400 hover:text-white">Entregas</a></li>
+                         <li><a href="#" class="text-gray-400 hover:text-white">Trocas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Pagamento</h4>
+                    <div class="flex flex-wrap gap-2 items-center">
+                        <img src="https://placehold.co/40x25/fff/000?text=Visa" alt="Visa" class="h-6 rounded-sm bg-white p-1">
+                        <img src="https://placehold.co/40x25/fff/000?text=Master" alt="Mastercard" class="h-6 rounded-sm bg-white p-1">
+                        <img src="https://placehold.co/40x25/fff/000?text=Pix" alt="Pix" class="h-6 rounded-sm bg-white p-1">
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 py-6 text-center text-gray-400 text-sm">
+                © 2025 Elegance Perfumaria. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay"></div>
+    
+    <div id="cart-modal" class="cart-modal">
+        <div class="flex justify-between items-center p-4 border-b">
+            <h3 class="text-xl font-bold">Seu Carrinho</h3>
+            <button id="close-cart-btn" class="p-1 font-bold text-2xl leading-none">×</button>
+        </div>
+        <div id="cart-items" class="flex-grow p-4 overflow-y-auto">
+            </div>
+        <div class="p-4 border-t bg-gray-50">
+            <div class="flex justify-between items-center mb-4">
+                <span class="text-lg">Total</span>
+                <span id="cart-total" class="text-lg font-bold">R$ 0,00</span>
+            </div>
+            <button id="checkout-btn" class="w-full bg-gray-900 hover:bg-gray-700 text-white font-bold py-3 px-4 rounded-md transition duration-300">
+                Finalizar Compra
+            </button>
+        </div>
+    </div>
+    
+    <div id="checkout-modal" class="checkout-modal">
+        <div class="flex justify-between items-center p-4 border-b">
+            <h3 class="text-xl font-bold">Finalizar Pedido</h3>
+            <button id="close-checkout-btn" class="p-1 font-bold text-2xl leading-none">×</button>
+        </div>
+        <div id="checkout-view" class="p-6">
+            <form id="checkout-form">
+                <div class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Nome Completo</label>
+                        <input type="text" id="checkout-name" class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md" required>
+                    </div>
+                    <div>
+                        <label for="address" class="block text-sm font-medium text-gray-700">Endereço de Entrega</label>
+                        <input type="text" id="checkout-address" class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md" required>
+                    </div>
+                    <div class="border-t pt-4">
+                        <h4 class="font-semibold mb-2">Resumo do Pedido</h4>
+                        <div id="checkout-summary" class="text-sm text-gray-600"></div>
+                        <div class="flex justify-between items-center mt-2 font-bold text-lg">
+                            <span>Total</span>
+                            <span id="checkout-total">R$ 0,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-md transition duration-300">
+                        Pagar Agora
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
